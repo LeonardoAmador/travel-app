@@ -18,10 +18,11 @@ npm run build
 ```
 cd proxy-server
 ```
-### Install all dependencies:
+
 ```
 npm install
 ```
+
 ### Run the proxy server::
 ```
 node server.mjs
