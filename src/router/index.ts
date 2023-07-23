@@ -8,6 +8,12 @@ const routes: Array<RouteRecordRaw> = [
     name: "destination.show",
     component: () => import("@/views/DestinationShow.vue"),
   },
+  {
+    path: "/destination/:id/:slug/:experienceSlug",
+    name: "experience.show",
+    component: () => import("@/views/ExperienceShow.vue"),
+    props: route => ({...route.params, id: Number(route.params.id) })
+  }
 ];
 
 const router = createRouter({
